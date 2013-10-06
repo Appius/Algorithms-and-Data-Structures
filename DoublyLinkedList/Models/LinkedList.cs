@@ -1,16 +1,11 @@
-﻿#region
-
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 
-#endregion
-
-namespace LinkedList.Models
+namespace DoublyLinkedList.Models
 {
     /// <summary>
-    ///     Односвязный список
+    ///     Двусвязный список
     /// </summary>
     /// <typeparam name="T">Тип значения в вершинах</typeparam>
     public class LinkedList<T> : ICollection<T>
@@ -44,9 +39,12 @@ namespace LinkedList.Models
             LinkedListNode<T> temp = Head;
             Head = node;
             Head.Next = temp;
+            
             Count++;
             if (Count == 1)
                 Tail = Head;
+            else
+                temp.Previous = Head;
         }
 
         /// <summary>
@@ -67,7 +65,10 @@ namespace LinkedList.Models
             if (Count == 0)
                 Head = node;
             else
+            {
                 Tail.Next = node;
+                node.Previous = Tail;
+            }
 
             Tail = node;
             Count++;
@@ -88,6 +89,8 @@ namespace LinkedList.Models
                 Count--;
                 if (Count == 0)
                     Tail = null;
+                else
+                    Head.Previous = null;
             }
         }
 
@@ -105,12 +108,15 @@ namespace LinkedList.Models
                 }
                 else
                 {
-                    LinkedListNode<T> temp = Head;
+                    Tail = Tail.Previous;
+                    Tail.Next = null;
+
+                    /*LinkedListNode<T> temp = Head;
                     while (temp.Next != Tail)
                         temp = temp.Next;
 
                     temp.Next = null;
-                    Tail = temp;
+                    Tail = temp;*/
                 }
                 Count--;
             }
@@ -135,7 +141,7 @@ namespace LinkedList.Models
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return ((IEnumerable<T>) this).GetEnumerator();
+            return ((IEnumerable<T>)this).GetEnumerator();
         }
 
         /// <summary>
@@ -210,6 +216,8 @@ namespace LinkedList.Models
                         previous.Next = current.Next;
                         if (current.Next == null)
                             Tail = previous;
+                        else
+                            previous.Next.Previous = previous;
                     }
                     Count--;
                     return true;
