@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stacks", "Stacks", "{D4F714
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack.LinkedList", "Stack.LinkedList\Stack.LinkedList.csproj", "{91E94221-70BD-4A63-8682-321DDCDC3920}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack.Array", "Stack.Array\Stack.Array.csproj", "{8B20D1F9-AA87-4E61-A846-09F65E2993E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{91E94221-70BD-4A63-8682-321DDCDC3920}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91E94221-70BD-4A63-8682-321DDCDC3920}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91E94221-70BD-4A63-8682-321DDCDC3920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B20D1F9-AA87-4E61-A846-09F65E2993E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B20D1F9-AA87-4E61-A846-09F65E2993E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B20D1F9-AA87-4E61-A846-09F65E2993E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B20D1F9-AA87-4E61-A846-09F65E2993E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,5 +43,6 @@ Global
 		{A853C703-DFE7-4DFA-A855-95E8BFB060CB} = {5765CA6C-8795-451E-BE8B-1B7A3D761800}
 		{7A6374EF-4EB8-4A42-82F5-B78D6D3EBF2B} = {5765CA6C-8795-451E-BE8B-1B7A3D761800}
 		{91E94221-70BD-4A63-8682-321DDCDC3920} = {D4F714DD-6E70-44C3-8ECD-5BE3F5AE3305}
+		{8B20D1F9-AA87-4E61-A846-09F65E2993E8} = {D4F714DD-6E70-44C3-8ECD-5BE3F5AE3305}
 	EndGlobalSection
 EndGlobal
