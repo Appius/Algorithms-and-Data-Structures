@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue.LinkedList", "Queue.L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue.Array", "Queue.Array\Queue.Array.csproj", "{BFB4F814-BB85-47D5-BE55-81F7172086CB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityQueue", "PriorityQueue\PriorityQueue.csproj", "{6AEAA510-5C07-4686-BB36-AA77F8D8232B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{BFB4F814-BB85-47D5-BE55-81F7172086CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFB4F814-BB85-47D5-BE55-81F7172086CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFB4F814-BB85-47D5-BE55-81F7172086CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AEAA510-5C07-4686-BB36-AA77F8D8232B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AEAA510-5C07-4686-BB36-AA77F8D8232B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AEAA510-5C07-4686-BB36-AA77F8D8232B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AEAA510-5C07-4686-BB36-AA77F8D8232B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,5 +66,6 @@ Global
 		{8B20D1F9-AA87-4E61-A846-09F65E2993E8} = {D4F714DD-6E70-44C3-8ECD-5BE3F5AE3305}
 		{43344316-F018-4400-AEA5-9015D21FF193} = {D7CE4D52-C3EA-48BC-AD87-3115E16E79DF}
 		{BFB4F814-BB85-47D5-BE55-81F7172086CB} = {D7CE4D52-C3EA-48BC-AD87-3115E16E79DF}
+		{6AEAA510-5C07-4686-BB36-AA77F8D8232B} = {D7CE4D52-C3EA-48BC-AD87-3115E16E79DF}
 	EndGlobalSection
 EndGlobal

@@ -8,3 +8,4 @@ Some of popular data structures and algorithms:
 - Stack with LinkedList
 - Queue with Array
 - Queue with LinkedList
+- Queue with Priority mechanism
