@@ -13,13 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack.LinkedList", "Stack.L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack.Array", "Stack.Array\Stack.Array.csproj", "{8B20D1F9-AA87-4E61-A846-09F65E2993E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Queue", "Queue", "{D7CE4D52-C3EA-48BC-AD87-3115E16E79DF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Queues", "Queues", "{D7CE4D52-C3EA-48BC-AD87-3115E16E79DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue.LinkedList", "Queue.LinkedList\Queue.LinkedList.csproj", "{43344316-F018-4400-AEA5-9015D21FF193}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue.Array", "Queue.Array\Queue.Array.csproj", "{BFB4F814-BB85-47D5-BE55-81F7172086CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityQueue", "PriorityQueue\PriorityQueue.csproj", "{6AEAA510-5C07-4686-BB36-AA77F8D8232B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue.Priority", "Queue.Priority\Queue.Priority.csproj", "{6AEAA510-5C07-4686-BB36-AA77F8D8232B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

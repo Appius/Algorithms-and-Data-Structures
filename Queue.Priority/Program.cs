@@ -1,11 +1,11 @@
 ﻿#region
 
 using System;
-using PriorityQueue.Models;
+using Queue.Priority.Models;
 
 #endregion
 
-namespace PriorityQueue
+namespace Queue.Priority
 {
     internal class Program
     {
