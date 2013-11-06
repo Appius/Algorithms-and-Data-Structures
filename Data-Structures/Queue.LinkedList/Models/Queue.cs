@@ -9,7 +9,7 @@ using System.Collections.Generic;
 namespace Queue.LinkedList.Models
 {
     /// <summary>
-    ///     Очередь, которая реализована на основе связного списка
+    ///     Очередь, которая реализована на основе связаного списка
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class Queue<T> : IEnumerable<T>
