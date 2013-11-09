@@ -14,6 +14,15 @@ namespace BinaryTree.Models
         where T : IComparable<T>
     {
         /// <summary>
+        /// Конструктор
+        /// </summary>
+        /// <param name="value">Значение в вершине</param>
+        public BinaryTreeNode(T value)
+        {
+            Value = value;
+        }
+
+        /// <summary>
         ///     Значение в вершине
         /// </summary>
         public T Value { get; set; }
