@@ -21,6 +21,8 @@ namespace BinaryTree
 
             Console.WriteLine("{0}, count of items: {1}", binaryTree, binaryTree.Count);
             Console.ReadKey();
+
+            binaryTree.Clear();
         }
     }
 }
