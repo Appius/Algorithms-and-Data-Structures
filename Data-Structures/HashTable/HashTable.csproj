@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HashTable.cs" />
+    <Compile Include="HashTableArray.cs" />
+    <Compile Include="HashTableArrayNode.cs" />
+    <Compile Include="HashTableNodePair.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
