@@ -1,6 +1,8 @@
 ﻿#region
 
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 #endregion
 
@@ -70,6 +72,22 @@ namespace HashTable
         }
 
         /// <summary>
+        ///     Получение списка ключей
+        /// </summary>
+        public IEnumerable<TKey> Keys
+        {
+            get { return _array.Keys; }
+        }
+
+        /// <summary>
+        ///     Возвращает список значений в коллекции
+        /// </summary>
+        public IEnumerable<TValue> Values
+        {
+            get { return _array.Values; }
+        }
+
+        /// <summary>
         ///     Добавление элемента в массив
         /// </summary>
         /// <param name="key">Ключ элемента</param>
@@ -106,6 +124,35 @@ namespace HashTable
         /// <param name="key">Ключ объекта</param>
         /// <param name="value">Значение объекта</param>
         public bool TryGetArray(TKey key, out TValue value)
+        {
+            return _array.TryGetValue(key, out value);
+        }
+
+        /// <summary>
+        ///     Проверка, есть ли ключ в коллекции
+        /// </summary>
+        /// <param name="key">Ключ</param>
+        public bool ContainsKey(TKey key)
+        {
+            TValue value;
+            return _array.TryGetValue(key, out value);
+        }
+
+        /// <summary>
+        ///     Проверка есть ли значение в коллекции
+        /// </summary>
+        /// <param name="value">Значение</param>
+        public bool ContainsValue(TValue value)
+        {
+            return _array.Values.Contains(value);
+        }
+
+        /// <summary>
+        ///     Попытка получить значение из коллекции по ключу объекта
+        /// </summary>
+        /// <param name="key">Ключ объекта</param>
+        /// <param name="value">Значение объекта</param>
+        public bool TryGetValue(TKey key, out TValue value)
         {
             return _array.TryGetValue(key, out value);
         }

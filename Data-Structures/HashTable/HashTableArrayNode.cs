@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 
 #endregion
 
@@ -116,8 +117,9 @@ namespace HashTable
         public bool TryGetValue(TKey key, out TValue value)
         {
             value = default(TValue);
-            var found = false;
+            if (_items == null) return false;
 
+            var found = false;
             foreach (var hashTableNodePair in _items.Where(hashTableNodePair => hashTableNodePair.Key.Equals(key)))
             {
                 value = hashTableNodePair.Value;
@@ -134,8 +136,9 @@ namespace HashTable
         /// <returns>True, если объект был найден и удален, false иначе</returns>
         public bool Remove(TKey key)
         {
-            var removed = false;
+            if (_items == null || _items.Count == 0) return false;
 
+            var removed = false;
             LinkedListNode<HashTableNodePair<TKey, TValue>> hashTableNodePair = _items.First;
             while (hashTableNodePair != null)
             {

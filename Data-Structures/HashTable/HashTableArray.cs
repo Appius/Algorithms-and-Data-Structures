@@ -9,7 +9,7 @@ using System.Linq;
 namespace HashTable
 {
     /// <summary>
-    /// Реализация внутренней структуры ключ-значение
+    ///     Реализация внутренней структуры ключ-значение
     /// </summary>
     /// <typeparam name="TKey">Тип данных ключа</typeparam>
     /// <typeparam name="TValue">Тип данных значения</typeparam>
@@ -40,6 +40,14 @@ namespace HashTable
         }
 
         /// <summary>
+        ///     Возвращает значения в массиве
+        /// </summary>
+        public IEnumerable<HashTableNodePair<TKey, TValue>> Items
+        {
+            get { return _array.SelectMany(node => node.Items); }
+        }
+
+        /// <summary>
         ///     Возвращает все значения из массива
         /// </summary>
         public IEnumerable<TValue> Values
@@ -48,11 +56,11 @@ namespace HashTable
         }
 
         /// <summary>
-        ///     Возвращает значения в массиве
+        ///     Получение списка ключей в коллекции
         /// </summary>
-        public IEnumerable<HashTableNodePair<TKey, TValue>> Items
+        public IEnumerable<TKey> Keys
         {
-            get { return _array.SelectMany(node => node.Items); }
+            get { return _array.SelectMany(node => node.Keys); }
         }
 
         /// <summary>
