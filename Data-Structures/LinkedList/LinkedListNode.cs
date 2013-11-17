@@ -4,7 +4,7 @@ using System;
 
 #endregion
 
-namespace LinkedList.Models
+namespace LinkedList
 {
     /// <summary>
     ///     Класс вершины списка

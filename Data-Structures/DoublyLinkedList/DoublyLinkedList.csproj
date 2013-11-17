@@ -36,8 +36,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\LinkedList.cs" />
-    <Compile Include="Models\LinkedListNode.cs" />
+    <Compile Include="LinkedList.cs" />
+    <Compile Include="LinkedListNode.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

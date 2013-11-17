@@ -51,6 +51,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="HashTableTest.cs" />
+    <Compile Include="LinkedLists\DoublyLinkedListTest.cs" />
+    <Compile Include="LinkedLists\LinkedListTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BinaryTree\BinaryTree.csproj">
@@ -67,7 +69,7 @@
     </ProjectReference>
     <ProjectReference Include="..\LinkedList\LinkedList.csproj">
       <Project>{a853c703-dfe7-4dfa-a855-95e8bfb060cb}</Project>
-      <Name>LinkedList %28LinkedList\LinkedList%29</Name>
+      <Name>LinkedList</Name>
     </ProjectReference>
     <ProjectReference Include="..\Queue.Array\Queue.Array.csproj">
       <Project>{bfb4f814-bb85-47d5-be55-81f7172086cb}</Project>

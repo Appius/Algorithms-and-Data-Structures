@@ -1,7 +1,6 @@
 ﻿#region
 
 using System;
-using LinkedList.Models;
 
 #endregion
 

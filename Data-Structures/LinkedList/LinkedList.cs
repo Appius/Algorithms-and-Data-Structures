@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 #endregion
 
-namespace LinkedList.Models
+namespace LinkedList
 {
     /// <summary>
     ///     Односвязный список
@@ -166,7 +166,7 @@ namespace LinkedList.Models
             LinkedListNode<T> current = Head;
             while (current != null)
             {
-                if (current.Next.Equals(item))
+                if (current.Next!=null && current.Next.Value.Equals(item))
                     return true;
                 current = current.Next;
             }

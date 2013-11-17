@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace DoublyLinkedList.Models
+namespace DoublyLinkedList
 {
     /// <summary>
     ///     Двусвязный список
@@ -173,7 +173,7 @@ namespace DoublyLinkedList.Models
             LinkedListNode<T> current = Head;
             while (current != null)
             {
-                if (current.Next.Equals(item))
+                if (current.Next!=null && current.Next.Value.Equals(item))
                     return true;
                 current = current.Next;
             }

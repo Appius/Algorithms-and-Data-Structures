@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 #endregion
 
@@ -155,6 +156,22 @@ namespace HashTable
         public bool TryGetValue(TKey key, out TValue value)
         {
             return _array.TryGetValue(key, out value);
+        }
+
+        /// <summary>
+        ///     Перегрузка операции получения строки
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            var strBuilder = new StringBuilder();
+            foreach (TKey key in Keys)
+            {
+                TValue value;
+                var flag = TryGetValue(key, out value);
+                if (flag) strBuilder.AppendLine(string.Format("{0} -> {1}", key, value));
+            }
+            return strBuilder.ToString();
         }
     }
 }
