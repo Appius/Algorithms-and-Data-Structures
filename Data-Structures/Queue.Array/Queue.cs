@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 #endregion
 
-namespace Queue.Array.Models
+namespace Queue.Array
 {
     /// <summary>
     ///     Реализация очереди через массив

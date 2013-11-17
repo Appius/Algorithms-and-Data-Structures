@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 #endregion
 
-namespace Queue.LinkedList.Models
+namespace Queue.LinkedList
 {
     /// <summary>
     ///     Очередь, которая реализована на основе связаного списка

@@ -53,6 +53,9 @@
     <Compile Include="HashTableTest.cs" />
     <Compile Include="LinkedLists\DoublyLinkedListTest.cs" />
     <Compile Include="LinkedLists\LinkedListTest.cs" />
+    <Compile Include="Queues\QueuePriorityTest.cs" />
+    <Compile Include="Queues\QueueLinkedListTest.cs" />
+    <Compile Include="Queues\QueueArrayTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BinaryTree\BinaryTree.csproj">

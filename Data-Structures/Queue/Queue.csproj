@@ -36,8 +36,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Queue.cs" />
-    <Compile Include="Models\QueueNode.cs" />
+    <Compile Include="Queue.cs" />
+    <Compile Include="QueueNode.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

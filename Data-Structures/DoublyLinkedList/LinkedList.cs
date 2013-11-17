@@ -1,6 +1,10 @@
-﻿using System;
+﻿#region
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
+
+#endregion
 
 namespace DoublyLinkedList
 {
@@ -39,7 +43,7 @@ namespace DoublyLinkedList
             LinkedListNode<T> temp = Head;
             Head = node;
             Head.Next = temp;
-            
+
             Count++;
             if (Count == 1)
                 Tail = Head;
@@ -141,7 +145,7 @@ namespace DoublyLinkedList
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return ((IEnumerable<T>)this).GetEnumerator();
+            return ((IEnumerable<T>) this).GetEnumerator();
         }
 
         /// <summary>
@@ -173,7 +177,7 @@ namespace DoublyLinkedList
             LinkedListNode<T> current = Head;
             while (current != null)
             {
-                if (current.Next!=null && current.Next.Value.Equals(item))
+                if (current.Next != null && current.Next.Value.Equals(item))
                     return true;
                 current = current.Next;
             }

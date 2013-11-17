@@ -4,7 +4,7 @@ using System;
 
 #endregion
 
-namespace Queue.Models
+namespace Queue
 {
     /// <summary>
     ///     Элемент очереди

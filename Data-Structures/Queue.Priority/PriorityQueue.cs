@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 #endregion
 
-namespace Queue.Priority.Models
+namespace Queue.Priority
 {
     /// <summary>
     /// Очередь с приоритетом (более приоритетные элементы выполняються раньше других)

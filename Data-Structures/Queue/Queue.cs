@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 #endregion
 
-namespace Queue.Models
+namespace Queue
 {
     /// <summary>
     ///     Очеридь, реализованая на основе своего собственного двусвязного списка

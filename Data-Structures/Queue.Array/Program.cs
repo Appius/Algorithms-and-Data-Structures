@@ -1,7 +1,6 @@
 ﻿#region
 
 using System;
-using Queue.Array.Models;
 
 #endregion
 
