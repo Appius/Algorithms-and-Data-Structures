@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 #endregion
 
-namespace Stack.Models
+namespace Stack
 {
     public class Stack<T> : IEnumerable<T>
     {

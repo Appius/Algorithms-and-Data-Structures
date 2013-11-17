@@ -7,7 +7,7 @@ using System.Linq;
 
 #endregion
 
-namespace Stack.Array.Models
+namespace Stack.Array
 {
     /// <summary>
     ///     Реализация стека через массив

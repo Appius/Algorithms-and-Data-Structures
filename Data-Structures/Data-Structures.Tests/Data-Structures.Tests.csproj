@@ -56,6 +56,8 @@
     <Compile Include="Queues\QueuePriorityTest.cs" />
     <Compile Include="Queues\QueueLinkedListTest.cs" />
     <Compile Include="Queues\QueueArrayTest.cs" />
+    <Compile Include="Stacks\StackLinkedListTest.cs" />
+    <Compile Include="Stacks\StackArrayTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BinaryTree\BinaryTree.csproj">

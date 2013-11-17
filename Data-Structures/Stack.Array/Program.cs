@@ -1,7 +1,6 @@
 ﻿#region
 
 using System;
-using Stack.Array.Models;
 
 #endregion
 

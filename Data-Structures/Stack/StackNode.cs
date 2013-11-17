@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿#region
 
-namespace Stack.Models
+using System;
+
+#endregion
+
+namespace Stack
 {
     /// <summary>
-    /// Элемент в стеке
+    ///     Элемент в стеке
     /// </summary>
     /// <typeparam name="T">Тип данных в стеке</typeparam>
     public class StackNode<T>
@@ -17,12 +18,12 @@ namespace Stack.Models
         }
 
         /// <summary>
-        /// Значение в стеке
+        ///     Значение в стеке
         /// </summary>
         public T Value { get; set; }
 
         /// <summary>
-        /// Ссылка на следующий элемент
+        ///     Ссылка на следующий элемент
         /// </summary>
         public StackNode<T> Next { get; set; }
     }

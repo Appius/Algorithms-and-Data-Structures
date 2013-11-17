@@ -36,8 +36,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\BinaryTree.cs" />
-    <Compile Include="Models\BinaryTreeNode.cs" />
+    <Compile Include="BinaryTree.cs" />
+    <Compile Include="BinaryTreeNode.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

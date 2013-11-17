@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 #endregion
 
-namespace BinaryTree.Models
+namespace BinaryTree
 {
     /// <summary>
     ///     Релизация структуры бинарного дерева

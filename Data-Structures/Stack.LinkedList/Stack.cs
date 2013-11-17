@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 #endregion
 
-namespace Stack.LinkedList.Models
+namespace Stack.LinkedList
 {
     /// <summary>
     ///     Реализация стека на основе стандартного списка из .NET
@@ -80,6 +80,14 @@ namespace Stack.LinkedList.Models
         public override string ToString()
         {
             return string.Join("<-", _list);
+        }
+
+        /// <summary>
+        ///     Очищение стека от элементов
+        /// </summary>
+        public void Clear()
+        {
+            _list.Clear();
         }
     }
 }

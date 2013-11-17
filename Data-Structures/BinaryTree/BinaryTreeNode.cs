@@ -4,7 +4,7 @@ using System;
 
 #endregion
 
-namespace BinaryTree.Models
+namespace BinaryTree
 {
     /// <summary>
     ///     Класс вершины бинарного дерева
