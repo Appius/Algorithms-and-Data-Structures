@@ -1,6 +1,7 @@
 ﻿#region
 
 using System;
+using System.Linq;
 
 #endregion
 
@@ -9,7 +10,7 @@ namespace SortingAlgorimths
     /// <summary>
     ///     Алгоритмы сортировки
     /// </summary>
-    /// <typeparam name="T">Тип данных, коллекцию которых надо отсортировать</typeparam>
+    /// <typeparam name="T">Тип данных, коллекцию объектов которых надо отсортировать</typeparam>
     public static class SortingAlgorithms<T> where T : IComparable
     {
         /// <summary>
@@ -84,6 +85,45 @@ namespace SortingAlgorimths
                     k--;
                 }
                 array[k + 1] = min;
+            }
+            return array;
+        }
+
+        /// <summary>
+        ///     Сортировка слиянием
+        /// </summary>
+        /// <param name="array">Массив данных</param>
+        public static T[] MergeSort(params T[] array)
+        {
+            if (array.Length > 1)
+            {
+                int n = array.Length/2;
+                T[] lt = array.Take(n).ToArray();
+                T[] rt = array.Skip(n).Take(array.Length - n).ToArray();
+
+                lt = MergeSort(lt);
+                rt = MergeSort(rt);
+
+                var newArray = new T[array.Length];
+                int i = 0;
+                int j = 0;
+                int index = 0;
+
+                while (i + j < array.Length)
+                {
+                    if (i == lt.Length || (j != rt.Length && lt[i].CompareTo(rt[j]) > 0))
+                    {
+                        newArray[index] = rt[j];
+                        j++;
+                    }
+                    else
+                    {
+                        newArray[index] = lt[i];
+                        i++;
+                    }
+                    index++;
+                }
+                return newArray;
             }
             return array;
         }

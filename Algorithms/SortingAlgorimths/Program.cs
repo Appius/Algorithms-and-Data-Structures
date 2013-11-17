@@ -15,12 +15,12 @@ namespace SortingAlgorimths
 
         static void Main(string[] args)
         {
-            var data = new[] {1, 6, 9, 4, 7, -6, 7};
+            var data = new[] {6, 4, 1, 4, 7, -6, 7};
             Display(data);
             
 //            Display(SortingAlgorithms<int>.BubbleSort(data));
 //            Display(SortingAlgorithms<int>.InsertionSort(data));
-            Display(SortingAlgorithms<int>.SelectionSort(data));
+            Display(SortingAlgorithms<int>.MergeSort(data));
 
             Console.ReadKey();
         }
