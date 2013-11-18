@@ -105,9 +105,9 @@ namespace SortingAlgorimths
                 rt = MergeSort(rt);
 
                 var newArray = new T[array.Length];
-                int i = 0;
-                int j = 0;
-                int index = 0;
+                var i = 0;
+                var j = 0;
+                var index = 0;
 
                 while (i + j < array.Length)
                 {
@@ -125,6 +125,43 @@ namespace SortingAlgorimths
                 }
                 return newArray;
             }
+            return array;
+        }
+
+        /// <summary>
+        /// Быстрая сотрировка
+        /// </summary>
+        /// <param name="array">Массив данных</param>
+        /// <param name="l">Индекс первого элемента массива (можно не указывать, если сортировать сначала массива)</param>
+        /// <param name="r">Инлекс последнего элемента массива (можно не указывать, если сортировать массив до последнего элемента)</param>
+        public static T[] QuickSort(T[] array, int l = -1, int r = -1)
+        {
+            if (l == -1 && r == -1)
+            {
+                l = 0;
+                r = array.Length - 1;
+            }
+            T x = array[(l + r) / 2];
+            
+            int i = l;
+            int j = r;
+            
+            while (i <= j)
+            {
+                while (array[i].CompareTo(x) < 0) i++;
+                while (array[j].CompareTo(x) > 0) j--;
+                if (i <= j)
+                {
+                    T temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                    i++;
+                    j--;
+                }
+            }
+
+            if (i < r) array = QuickSort(array, i, r);
+            if (l < j) array = QuickSort(array, l, j);
             return array;
         }
     }
