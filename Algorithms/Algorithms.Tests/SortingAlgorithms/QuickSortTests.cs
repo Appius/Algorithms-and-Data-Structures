@@ -7,7 +7,7 @@ namespace Algorithms.Tests.SortingAlgorithms
     [TestClass]
     public class QuickSortTests
     {
-        private readonly Random _random = new Random();
+        private static readonly Random Random = new Random();
 
         [TestMethod]
         public void QuickTest()
@@ -16,7 +16,7 @@ namespace Algorithms.Tests.SortingAlgorithms
 
             var array = new int[n];
             for (int i = 0; i < n; i++)
-                array[i] = _random.Next();
+                array[i] = Random.Next();
 
             var newArray = new int[n];
             array.CopyTo(newArray, 0);
